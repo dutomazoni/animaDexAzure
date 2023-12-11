@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+$background-color: #BA181B;
+$button-color: #B1A7A6;
+$icon-color: #0B090A;
+$font-color: #161A1D;
+$modal-background: #F5F3F4;
+$error-button: #E5383B;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", monospace;
+  background: $background-color;
+  //background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  display: flex;
+}

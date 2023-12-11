@@ -1,0 +1,176 @@
+@import "./src/scss/App";
+
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: auto;
+}
+
+.add-animal {
+  border-radius: 50%;
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background: $button-color;
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    color: black;
+    border: 2px solid black;
+  }
+}
+.edit-animal {
+  margin-left: 3vw;
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background: $button-color;
+  border-radius: 50%;
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    color: black;
+    border: 2px solid black;
+  }
+}
+
+.next-animal {
+  margin-left: -1px;
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background: $button-color;
+  border-radius: 0;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    color: $icon-color;
+    border-radius: 0;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border: 2px solid black;
+  }
+}
+
+.previous-animal {
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background: $button-color;
+  border-radius: 0;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    color: $icon-color;
+    border-radius: 0;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border: 2px solid black;
+  }
+}
+
+.loader {
+  display: flex;
+  height: 80vh;
+}
+
+.main-page {
+  margin: auto;
+  overflow: hidden;
+  background: transparent;
+}
+
+.main-page[animate='1'] {
+  animation-duration: 1s;
+  animation-name: slideright;
+}
+
+.main-page[animate='2'] {
+  animation-duration: 1s;
+  animation-name: sliderleft;
+}
+.green-led {
+  margin-left: 3vh;
+  width: 15px;
+  height: 15px;
+  background-color: #48e625;
+  border-radius:50%;
+  box-shadow: 0 0 0 1px #100807;
+  animation: blink-green 3s ease-in-out infinite;
+}
+
+.blue-led {
+  margin-left: 3vh;
+  width: 15px;
+  height: 15px;
+  background-color: #16a9d9;
+  border-radius:50%;
+  box-shadow: 0 0 0 1px #100807;
+  animation: blink-blue 1s ease-in-out infinite;
+}
+
+.yellow-led {
+  margin-left: 3vh;
+  width: 15px;
+  height: 15px;
+  background-color: #e6e325;
+  border-radius:50%;
+  box-shadow: 0 0 0 1px #100807;
+  animation: blink-yellow 5s ease-in-out infinite;
+}
+
+@keyframes slideright {
+  from {
+    margin-left: -200%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes sliderleft {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes blink-yellow {
+  0% {
+    background-color: #e6e325;
+  }
+
+  50% {
+    background-color: #020202;
+  }
+
+  100% {
+    background-color: #e6e325;
+  }
+}
+
+@keyframes blink-blue {
+  0% {
+    background-color: #16a9d9;
+  }
+
+  50% {
+    background-color: #020202;
+  }
+
+  100% {
+    background-color: #16a9d9;
+  }
+}
+
+@keyframes blink-green {
+  0% {
+    background-color: #48e625;
+  }
+
+  50% {
+    background-color: #020202;
+  }
+
+  100% {
+    background-color: #48e625;
+  }
+}
+

@@ -1,0 +1,76 @@
+@import "./src/scss/App";
+
+.modal-container {
+  margin: 10% auto;
+  width: 90%;
+  .css-79ws1d-MuiModal-root {
+    display: flex;
+  }
+}
+
+.form-container {
+  border: 2px solid black;
+  width: auto;
+  height: auto;
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background: $modal-background;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  .css-9npbnl-MuiFormLabel-root-MuiInputLabel-root {
+    font-size: 1.25rem;
+  }
+}
+
+.input-label {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+}
+
+.input-field {
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    color: black;
+    border-radius: 50%;
+    border: 2px solid black;
+    //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background: $button-color;
+    margin: 1vh;
+  }
+}
+
+.add-img {
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    padding: 1vh;
+    margin-left: 20vw;
+    color: black;
+    border-radius: 50%;
+    border: 2px solid black;
+    //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background: $button-color;
+  }
+
+}
+
+.error-img {
+  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    padding: 1vh;
+    margin-left: 20vw;
+    color: $error-button;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+    //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background: $button-color;
+  }
+}
